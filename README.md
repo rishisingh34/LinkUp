@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Conferencing Web App
 
-## Getting Started
+A fully-featured video conferencing web application built using Next.js, TypeScript, Clerk for authentication, and Stream for real-time video and chat capabilities.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Real-Time Video Conferencing**: Connect and communicate with multiple users in real-time.
+- **User Authentication**: Secure user management with Clerk.
+- **Instant Messaging**: Real-time chat during video sessions using Stream.
+- **Responsive UI**: Optimized for both desktop and mobile devices.
+- **Scalable**: Built with Next.js and TypeScript for maintainability and performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework for server-rendered React applications.
+- **TypeScript**: Type-safe development for scalable code.
+- **Clerk**: User authentication and management.
+- **Stream**: Real-time messaging and video API.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
+   
+2. **Install dependencies:**
+   npm install
+      # or
+   yarn install
+   
+3. Set up environment variables:
+   Create a .env.local file in the root of your project and add the following variables:
+   NEXT_PUBLIC_CLERK_FRONTEND_API=<your-clerk-frontend-api>
+   CLERK_API_KEY=<your-clerk-api-key>
+   STREAM_API_KEY=<your-stream-api-key>
+   STREAM_SECRET=<your-stream-secret>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Run the development server:
+   npm run dev
+    # or
+   yarn dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open http://localhost:3000 in your browser to see the app in action.
 
-## Deploy on Vercel
+## 📝 Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Sign up / Log in: Users are authenticated through Clerk.
+2. Join / Create a Room: Start or join a video conference.
+3. Chat: Send and receive messages in real time during the call.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+Here's an overview of the project's structure:
+
+├── components    # Reusable UI components
+├── pages         # Next.js pages and API routes
+├── lib           # Utility functions and external library setups
+├── public        # Public assets
+├── styles        # Global styles
+└── README.md     # Project documentation
+
+
+## 🧩 Key Libraries
+@clerk/nextjs: For integrating Clerk's authentication in Next.js.
+stream-chat-react: Components for the chat feature.
+next-auth: Optional, if needed for additional auth setups.
+
+
+## ⚙️ Deployment
+To deploy this project:
+Set up your environment variables in your deployment platform.
